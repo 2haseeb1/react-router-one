@@ -12,7 +12,7 @@ const JobsCategory = () => {
           <div className='icon-outside'>
             <FontAwesomeIcon icon={faUserCog} className='icon-inside' />
             </div>
-            <h2 className="text-xl font-bold text-center mt-[32px]">Software Engineer</h2>
+            <h2 className="text-xl font-bold mb-1 mt-[32px]">Software Engineer</h2>
             <p className='ml-[-35px]'>130+ jobs availabe</p>
             
            
@@ -23,8 +23,8 @@ const JobsCategory = () => {
             <div className='icon-outside'>
             <FontAwesomeIcon icon={faLaptopCode} className='icon-inside' />
             </div>
-            <h2 className="text-xl font-bold text-center mt-[32px]">IT Specialist</h2>
-            <p>30 jobs availabe</p>
+            <h2 className="text-xl font-bold ml-[-35px] mt-[32px] mb-1">IT Specialist</h2>
+            <p className='ml-[-45px]'>30 jobs availabe</p>
           
           </div>
   
@@ -33,8 +33,8 @@ const JobsCategory = () => {
             <div className='icon-outside'>
             <FontAwesomeIcon icon={faMobileAlt} className='icon-inside' />
             </div>
-            <h2 className="text-xl font-bold text-center mt-[32px]">Mobile App Designer</h2>
-            <p>100+ jobs availabe</p>
+            <h2 className="text-xl font-bold text-center mt-[32px] mb-1 mr-[-30px]">Mobile App Designer</h2>
+            <p className='ml-[-20px]'>100+ jobs availabe</p>
             
           </div>
   
@@ -42,8 +42,8 @@ const JobsCategory = () => {
             <div className='icon-outside'>
               <FontAwesomeIcon icon={faCalculator} className='icon-inside' />
               </div>
-            <h2 className="text-xl font-bold text-center mt-[32px]">Accounting Manager</h2>
-            <p>300 jobs availabe</p>
+            <h2 className="text-xl font-bold ml-7 mb-1 mt-[32px]">Accounting Manager</h2>
+            <p className='ml-[-40px]'>300 jobs availabe</p>
            
           </div>
         </div>
