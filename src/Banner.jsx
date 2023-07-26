@@ -34,19 +34,19 @@ const Navbar = () => {
     };
   
     return (
-        <nav className="bg-gray-800 p-4 flex items-center justify-between">
+        <nav className="bg-[#FFF] p-4 flex items-center justify-between w-[90%] mx-auto">
         <div className="flex items-center space-x-4">
-          <div className="text-white font-bold text-xl">Your Brand</div>
+          <div className="text-[#656565] font-bold text-xl">CrazyJobs</div>
          
         </div>
       
          
                 <div className="flex items-center space-x-4">
-                <Link to="/statistics" className="text-white hidden md:flex">Statistics</Link>
-          <Link to="/applied-jobs" className="text-white hidden md:flex">Applied Jobs</Link>
-                <Link to="/blog" className="text-white hidden md:flex">Blog</Link>
+                <Link to="/statistics" className="text-[#8B80FF] hidden md:flex">Statistics</Link>
+          <Link to="/applied-jobs" className="text-[#757575] hidden md:flex">Applied Jobs</Link>
+                <Link to="/blog" className="text-[#757575] hidden md:flex">Blog</Link>
                 </div>
-          <button className="bg-green-500 text-white px-4 py-2 rounded">Start Apply</button>
+          <button className="bg-[#8D7FFF] text-white px-4 py-2 rounded">Start Apply</button>
         
         <div className="md:hidden flex items-center">
           <button
@@ -63,7 +63,7 @@ const Navbar = () => {
             <Link to="/statistics" className="text-white">Statistics</Link>
             <Link to="/applied-jobs" className="text-white">Applied Jobs</Link>
             <Link to="/blog" className="text-white">Blog</Link>
-            <button className="bg-green-500 text-white px-4 py-2 rounded">Start Apply</button>
+            <button className=" bg-[#8D7FFF] text-white px-4 py-2 rounded">Start Apply</button>
           </div>
         )}
       </nav>

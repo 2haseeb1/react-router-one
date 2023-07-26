@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.icon-outside{
+    @apply w-[70px] h-[70px] bg-[#e9e4e4a4] flex justify-center items-center mt-6 ml-[-90px] rounded-md
+}
+.icon-inside{
+    @apply text-[45px] text-[#B4B3FE]  mx-[30px] pb-[30px]  block
+}
+
