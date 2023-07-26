@@ -17,23 +17,25 @@ function JobsList() {
 
 
   return (
-    <div className="jobs-list grid grid-cols-4 gap-3 mt-5 w-[90%]text-center mx-[12%]">
+    <div className="jobs-list grid grid-cols-2 gap-3 mt-5 w-[100%]text-center mx-[12%]">
       {jobs.map((job) => (
-        <div className="border border-solid border-gray-800 rounded-md p-3 w-[230px]" key={job.id}>
+        <div className="border border-solid border-gray-800 rounded-md p-3 w-[500px] h-[392px] mr-5 mx-auto mb-[40px]" key={job.id}>
           <img src={job.companylogo} alt={job.companybrandname} />
-          <h3>{job.profession}</h3>
-          <p>
+          <h3 className="text-[24px] font-bold mt-3">{job.profession}</h3>
+          <h4 className="text-[20px]">{job.companybrandname}</h4>
+          <p  className="text-[20px]"> 
             {job.jobtype} | {job.joblocation}
           </p>
-          <h4>{job.companybrandname}</h4>
-          <p>{job.salaryrange}</p>
+          
+          <p className="text-[20px]">{job.salaryrange}</p>
         
           <Link
             to={`/job/${job.id}`}
             state={job}
-            className="view-details-button"
+            className="button bg-[#7E90FE] text-white py-3 w-[30%] rounded-sm  block mt-5"
           >
-            View Details
+           
+            <span className="ml-3"> View Details</span>
           </Link>
         </div>
       ))}
