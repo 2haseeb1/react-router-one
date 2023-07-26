@@ -1,8 +1,10 @@
-import React from 'react';
+import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import jobsDataLoader from './loader/jobsDataLoader';
-import Home from './Home';
-import JobDetails from './JobDetails';
+import jobsDataLoader from "./loader/jobsDataLoader";
+import Home from "./Home";
+import JobDetails from "./JobDetails";
+import StoredData from "./SoredData";
+
 
 const router = createBrowserRouter([
   {
@@ -11,8 +13,12 @@ const router = createBrowserRouter([
   },
   {
     path: "job/:id",
-    element: <JobDetails />, // Use the JobDetails component to render job details page
+    element: <JobDetails />,
     loader: jobsDataLoader,
+  },
+  {
+    path: "applied-jobs",
+    element: <StoredData/>, 
   },
 ]);
 

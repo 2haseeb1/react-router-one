@@ -1,9 +1,17 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { addToDb } from "./utilities/fakeDb";
 
 function JobDetails() {
   const location = useLocation();
-  const job = location.state;
+    const job = location.state;
+    
+    const handleApply = () => {
+        
+    
+       
+        addToDb(job.id)
+      };
 
   if (!job) {
     // Handle the case when job data is not available (optional)
@@ -19,7 +27,10 @@ function JobDetails() {
       </p>
       <p>{job.salaryrange}</p>
       <p>{job.description}</p>
-      {/* Additional details for the specific job can be displayed here */}
+          {/* Additional details for the specific job can be displayed here */}
+          <button onClick={handleApply} className="apply-button">
+        Apply
+      </button>
     </div>
   );
 }

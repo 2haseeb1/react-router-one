@@ -17,7 +17,7 @@ function JobsList() {
 
 
   return (
-    <div className="jobs-list">
+    <div className="jobs-list grid grid-cols-4 gap-3 mt-5 w-[90%]text-center mx-[12%]">
       {jobs.map((job) => (
         <div className="border border-solid border-gray-800 rounded-md p-3 w-[230px]" key={job.id}>
           <img src={job.companylogo} alt={job.companybrandname} />

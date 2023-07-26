@@ -1,5 +1,6 @@
 import React from 'react'
 import JobsList from './JobsList'
+import Banner from './Banner'
 /* import { Studends } from './Students'
 import Banner from './Banner' */
 
@@ -9,7 +10,7 @@ const Home = () => {
   return (
     <div>
     
-     {/*  <Banner/> */}
+     <Banner/>
      <JobsList/>
     </div>
   )
