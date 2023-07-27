@@ -1,5 +1,6 @@
 import React from 'react'
-import JobsList from './JobsList'
+/* import JobsList from './JobsList' */
+import JobsList from './Ai component/JobList'
 import Banner from './Banner'
 import JobsCategory from './JobsCategory'
 /* import { Studends } from './Students'
@@ -12,7 +13,7 @@ const Home = () => {
     <div>
     
       <Banner />
-      <JobsCategory/>
+      <JobsCategory/> 
       <JobsList />
       
     </div>

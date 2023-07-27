@@ -43,7 +43,7 @@ const Navbar = () => {
          
                 <div className="flex items-center space-x-4">
                 <Link to="/statistics" className="text-[#8B80FF] hidden md:flex">Statistics</Link>
-          <Link to="/applied-jobs" className="text-[#757575] hidden md:flex">Applied Jobs</Link>
+          <Link to="/stored-data" className="text-[#757575] hidden md:flex">Applied Jobs</Link>
                 <Link to="/blog" className="text-[#757575] hidden md:flex">Blog</Link>
                 </div>
           <button className="bg-[#8D7FFF] text-white px-4 py-2 rounded">Start Apply</button>
